@@ -75,6 +75,8 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       todaysHabitList[index][0] = _newHabitNameController.text;
     });
+    _newHabitNameController.clear();
+    Navigator.pop(context);
   }
 
   void deleteHabit(int index) {

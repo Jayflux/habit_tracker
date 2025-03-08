@@ -27,14 +27,14 @@ class HabitTile extends StatelessWidget {
           children: [
             //settings
             SlidableAction(
-              onPressed: (context) => settingsTapped,
+              onPressed: (context) => settingsTapped!(context),
               backgroundColor: Colors.grey.shade800,
               icon: Icons.settings,
               borderRadius: BorderRadius.circular(12),
             ),
             //delete
             SlidableAction(
-              onPressed: (context) => deleteTapped,
+              onPressed: (context) => deleteTapped!(context),
               backgroundColor: Colors.red.shade400,
               icon: Icons.delete,
               borderRadius: BorderRadius.circular(12),
