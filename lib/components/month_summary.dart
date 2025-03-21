@@ -22,7 +22,7 @@ class MonthlySummary extends StatelessWidget {
         datasets: datasets,
         colorMode: ColorMode.color,
         defaultColor: Colors.grey[200],
-        textColor: Colors.white,
+        textColor: const Color.fromARGB(255, 0, 0, 0),
         showColorTip: false,
         showText: true,
         scrollable: true,
